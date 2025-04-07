@@ -204,6 +204,7 @@ pinia.use(piniaPluginPersistedstate)
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
+// setup Store
 export const useStore = defineStore(
     'main',
     () => {
@@ -219,6 +220,7 @@ export const useStore = defineStore(
     },
 )
 
+// Option Store
 const useCounterStore = defineStore('counter', {
   state: () => ({ count: 0}),
   getters: {
